@@ -49,6 +49,41 @@
             </div>
         </header>
 
+        <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>Get Full Student Details by entering the Student's Roll Number.</p>
+                <div class="my-5">
+
+                    <form id="contactForm" method="POST" action="php/get_student_info.php">
+                        <div class="form-floating">
+                            <input class="form-control" name="name" id="name" type="text" placeholder="Enter Roll Number" data-sb-validations="required" />
+                            <label for="name">Enter Roll Number of Student</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Roll number of student is required.</div>
+                        </div>
+                        <br />
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Get Information</button>
+                    </form>
+                </div>
+
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
